@@ -10,14 +10,14 @@ import Foundation
 
 public struct Weather: Decodable {
 
-    var base:String?
+    public var base:String?
     var dt:Double?
-    var timezone:Double?
+    public var timezone:Double?
     var id:Double?
-    var name:String?
+    public var name:String?
     var cod:Double?
     var coord:Coord?
-    var weather:Array<WeatherDescription>
+    public var weather:Array<WeatherDescription>
    // var main:Main?
     var wind:Wind?
     var clouds:Clouds?
