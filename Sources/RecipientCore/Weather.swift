@@ -17,7 +17,7 @@ public struct Weather: Decodable {
     public var name:String?
     var cod:Double?
     var coord:Coord?
-    public var weather:Array<WeatherDescription>
+    var weather:Array<WeatherDescription>
    // var main:Main?
     var wind:Wind?
     var clouds:Clouds?
