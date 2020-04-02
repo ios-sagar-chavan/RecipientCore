@@ -6,13 +6,13 @@
 //
 
 import Foundation
-import APICore
+import Framework
 
 public protocol RecipientDelegate: AnyObject {
     func didReceiveResponse(data: Weather)
 }
 
-open class Recipient : APIDelegate {
+open class Recipient : APICoreDelegate {
     public static let `default` = Recipient()
     public var delegate: RecipientDelegate?
     
